@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --border-radius-inner: 12px;
+  --padding: 14px;
+  --border-radius-outer: calc(var(--border-radius-inner) + var(--padding));
+}
+body {
+  font-family: "Outfit";
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  padding: var(--padding);
+  border-radius: var(--border-radius-outer);
+  margin: 0 1em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: var(--border-radius-inner);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  padding: 22px 10px;
+}
+
+.text h2 {
+  color: hsl(218, 44%, 22%);
+}
